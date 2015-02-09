@@ -6,6 +6,7 @@ import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.physics.box2d.Body;
 import com.badlogic.gdx.physics.box2d.BodyDef.BodyType;
 import com.lopp.game.handlers.input.MyInput;
+import com.lopp.game.inventory.Inventory;
 import com.lopp.game.states.GameStatePlay;
 
 public class EntityPlayer extends Entity {
@@ -19,6 +20,10 @@ public class EntityPlayer extends Entity {
 	private float health = 100;
 
 	private boolean isCrouching = false;
+	
+	//
+	
+	private Inventory inventory;
 	
 	public EntityPlayer() {
 		super("player", 0, BodyType.DynamicBody);

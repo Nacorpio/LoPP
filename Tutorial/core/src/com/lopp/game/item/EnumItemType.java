@@ -4,6 +4,7 @@ public enum EnumItemType {
 
 	WEAPON,
 	EXPLOSIVE,
-	RESOURCE
+	RESOURCE,
+	BLOCK
 	
 }
